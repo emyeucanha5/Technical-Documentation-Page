@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+#nav{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+
+}
+nav >div{
+  font-size: 1.8em;
+
+}
+nav > div >header{
+  font-size: 0.7em;
+  padding: 10px;
+  height: 10%;
+}
+nav > ul{
+  list-style-type: none;
+  height: 88%;
+  padding: 0;
+  overflow-y : auto;
+  overflow-x: hidden;
+}
+nav > ul > li{
+   
+   padding: 15px;
+   border-top: 1px solid;
+   padding-left: 30px;
+}
+nav > ul > li > a{
+  color: #4d4e53;
+  cursor: pointer;
+  text-decoration: none;
+}
+#maindocx{
+  margin-left: 25%;
+  padding: 20px;
+  position: absolute;
+  text-align: left;
+  position: absolute;
+}
+section > article {
+  color: #4d4e53;
+  margin: 20px;
+  font-size: 0.96em;
+}
+section li {
+  margin: 15px 0px 0px 45px;
+}
+#maindocx > section > header{
+  font-size: 1.8em;
+  margin: 10px;
+  font-weight: thin;
+
+}
+code{
+  font-family: monospace;
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.empty{
+  list-style-type: circle;
+  margin: 15px 0px 0px 45px;
+}
+@media only screen and (max-width: 835px) {
+  /* For mobile phones: */
+  #nav ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #nav {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #maindocx {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #maindocx {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
